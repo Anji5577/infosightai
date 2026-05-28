@@ -204,11 +204,11 @@ nav {
 
 
 .hero-headline {
-  font-size: clamp(32px, 3.8vw, 54px) !important;
-  line-height: 1.1 !important;
-  letter-spacing: -0.03em !important;
-  margin-top: 12px;
-  margin-bottom: 16px;
+  font-size: clamp(40px, 4.8vw, 68px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.04em !important;
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 .hero-card, .hero-wrapper {
