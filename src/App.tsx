@@ -67,13 +67,13 @@ function HomePage() {
           <Navigation />
           
           {/* Main Hero / 3D Banner Section */}
-          <section className="hero-section relative w-full px-[5vw] pb-16 bg-[#050505] border-b border-white/[0.06] overflow-hidden">
+          <section className="hero-section relative w-full flex flex-col items-center justify-start px-[5vw] pb-16 bg-[#050505] border-b border-white/[0.06] overflow-hidden">
             <div className="grid-overlay absolute inset-0 opacity-40 z-0 pointer-events-none" />
             <div className="noise-overlay" />
             <div className="ambient-glow -top-40 -left-40 w-96 h-96 z-0" />
             <div className="ambient-glow -bottom-40 -right-40 w-96 h-96 z-0" />
 
-            <div className="hero-content max-w-[1200px] mx-auto w-full relative z-10">
+            <div className="max-w-[1200px] mx-auto w-full relative z-10">
               <SplineSceneBasic />
             </div>
           </section>

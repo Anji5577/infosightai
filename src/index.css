@@ -81,11 +81,6 @@
     position: relative;
   }
 
-  body, main {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
   /* Fixed subtle noise overlay at 3% opacity */
   body::after {
     content: "";
@@ -187,28 +182,10 @@ nav {
 }
 
 /* Hero Section */
-.hero, #hero, .hero-section, section:first-of-type {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+.hero-section {
   position: relative;
   overflow: hidden;
-}
-
-.hero-content, .hero-inner, .hero > div {
-  padding-top: 96px !important;
-}
-
-
-.hero-headline {
-  font-size: clamp(40px, 4.8vw, 68px) !important;
-  line-height: 1.05 !important;
-  letter-spacing: -0.04em !important;
-  margin-top: 16px;
-  margin-bottom: 20px;
+  padding-top: 0 !important;
 }
 
 .hero-card, .hero-wrapper {
