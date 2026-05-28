@@ -5,7 +5,7 @@ import { Spotlight } from "@/components/ui/spotlight"
  
 export function SplineSceneBasic() {
   return (
-    <div className="hero-card w-full h-[550px] md:h-[600px] relative overflow-hidden">
+    <div className="hero-card w-full h-[500px] md:h-[540px] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
@@ -13,7 +13,7 @@ export function SplineSceneBasic() {
       
       <div className="flex h-full flex-col md:flex-row">
         {/* Left content */}
-        <div className="flex-1 p-8 md:p-12 pt-24 md:pt-28 relative z-10 flex flex-col justify-start text-left">
+        <div className="flex-1 p-8 md:p-12 pt-[72px] md:pt-[84px] relative z-10 flex flex-col justify-start text-left">
           <span className="section-label">
             AI Automation Services
           </span>

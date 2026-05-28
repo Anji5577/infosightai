@@ -186,6 +186,7 @@ nav {
   position: relative;
   overflow: hidden;
   padding-top: 0 !important;
+  padding-bottom: 64px !important;
 }
 
 .hero-card, .hero-wrapper {
