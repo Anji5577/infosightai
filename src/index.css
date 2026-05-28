@@ -81,6 +81,11 @@
     position: relative;
   }
 
+  body, main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
   /* Fixed subtle noise overlay at 3% opacity */
   body::after {
     content: "";
@@ -182,20 +187,19 @@ nav {
 }
 
 /* Hero Section */
-.hero-section {
-  position: relative;
-  overflow: hidden;
+.hero-section, section:first-of-type {
   padding-top: 0 !important;
+  padding-bottom: 0 !important;
   margin-top: 0 !important;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
-  padding-top: 100px;
+  padding-top: 96px !important;
 }
 
 .hero-card, .hero-wrapper {
