@@ -65,9 +65,21 @@ function HomePage() {
       {showContent && (
         <>
           <Navigation />
+          
+          {/* Main Hero / 3D Banner Section */}
+          <section className="hero-section relative w-full flex flex-col items-center justify-start px-[5vw] pb-16 bg-[#050505] border-b border-white/[0.06] overflow-hidden">
+            <div className="grid-overlay absolute inset-0 opacity-40 z-0 pointer-events-none" />
+            <div className="noise-overlay" />
+            <div className="ambient-glow -top-40 -left-40 w-96 h-96 z-0" />
+            <div className="ambient-glow -bottom-40 -right-40 w-96 h-96 z-0" />
+
+            <div className="max-w-[1200px] mx-auto w-full relative z-10">
+              <SplineSceneBasic />
+            </div>
+          </section>
 
           {/* Client Trust Bar Section */}
-          <div className="w-full pt-28 pb-12 border-b border-white/[0.06] bg-[#09090B]">
+          <div className="w-full py-12 border-b border-white/[0.06] bg-[#09090B]">
             <div className="max-w-[1080px] mx-auto px-8 flex flex-col items-center justify-center gap-6">
               <span className="text-[11px] uppercase tracking-[0.25em] text-white/35 font-medium font-sans">
                 Trusted by teams scaling with AI
