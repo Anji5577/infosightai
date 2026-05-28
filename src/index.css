@@ -188,18 +188,28 @@ nav {
 
 /* Hero Section */
 .hero-section, section:first-of-type {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 110px !important;
+  padding-bottom: 64px !important;
   margin-top: 0 !important;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
 }
 
 .hero-content {
-  padding-top: 96px !important;
+  padding-top: 0 !important;
+}
+
+.hero-headline {
+  font-size: clamp(32px, 3.8vw, 54px) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.03em !important;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 .hero-card, .hero-wrapper {
