@@ -186,6 +186,16 @@ nav {
   position: relative;
   overflow: hidden;
   padding-top: 0 !important;
+  margin-top: 0 !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  padding-top: 100px;
 }
 
 .hero-card, .hero-wrapper {
