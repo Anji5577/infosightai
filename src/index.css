@@ -123,6 +123,15 @@ h1 {
   z-index: 0;
 }
 
+/* Ambient Glow */
+.ambient-glow {
+  position: absolute;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  border-radius: 9999px;
+}
+
 /* Section label badge */
 .section-label {
   display: inline-block;
@@ -182,11 +191,16 @@ nav {
 }
 
 /* Hero Section */
-.hero-section {
+section.hero-section {
   position: relative;
   overflow: hidden;
-  padding-top: 0 !important;
+  padding-top: 80px !important;
   padding-bottom: 64px !important;
+}
+@media (min-width: 768px) {
+  section.hero-section {
+    padding-top: 100px !important;
+  }
 }
 
 .hero-card, .hero-wrapper {
