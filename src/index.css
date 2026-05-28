@@ -187,53 +187,20 @@ nav {
 }
 
 /* Hero Section */
-.hero-section, section.hero, #hero {
-  width: 100%;
+.hero, #hero, .hero-section, section:first-of-type {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 !important;
-  margin-top: 0 !important;
   position: relative;
   overflow: hidden;
 }
 
-/* Inner container: centered, equal left/right padding */
-.hero-inner, .hero > .container, .hero-container, .hero-content {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto !important;
-  padding: 100px 64px 80px 64px !important;   /* top clears navbar, sides equal */
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  align-items: center !important;
-  gap: 64px !important;
+.hero-content, .hero-inner, .hero > div {
+  padding-top: 96px !important;
 }
-
-/* Text column: starts from left edge of container */
-.hero-text, .hero-content-left, .hero-left {
-  padding: 0 !important;
-  margin: 0 !important;
-  text-align: left !important;
-}
-
-/* Image column: robot fills right side, anchored to right */
-.hero-image, .hero-visual, .hero-right, .hero-robot-container {
-  display: flex !important;
-  justify-content: flex-end !important;
-  align-items: flex-end !important;
-}
-
-/* Responsive: stack on mobile */
-@media (max-width: 768px) {
-  .hero-inner, .hero > .container, .hero-container, .hero-content {
-    grid-template-columns: 1fr !important;
-    padding: 100px 24px 60px !important;
-    gap: 40px !important;
-  }
-  .hero-image, .hero-visual, .hero-right, .hero-robot-container { display: none !important; }
-}
-
 
 
 .hero-headline {
