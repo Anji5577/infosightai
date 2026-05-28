@@ -13,7 +13,7 @@ export function SplineSceneBasic() {
       
       <div className="flex h-full flex-col md:flex-row">
         {/* Left content */}
-        <div className="flex-1 p-8 md:p-12 relative z-10 flex flex-col justify-center text-left">
+        <div className="flex-1 p-8 md:p-12 pt-24 md:pt-28 relative z-10 flex flex-col justify-start text-left">
           <span className="section-label">
             AI Automation Services
           </span>
